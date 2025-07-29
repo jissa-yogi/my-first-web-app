@@ -1,0 +1,112 @@
+/* ブラウザで設定されているスタイルのリセット・共通設定 */
+/* 消さないでください */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+form,
+input,
+textarea,
+select,
+button {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+/* スタイルのリセット終了 */
+/* Layout Wrapper */
+/* サイドバーとメインコンテンツを包むための要素のスタイルを書いてください */
+.dashboard-container {
+    display: flex; /* ←ここが正しく書けているか確認じゃ */
+    height: 100vh; /* ←ここも確認じゃ */
+}
+/* Sidebar Styles */
+/* サイドバーに関連するスタイルを書いてください */
+.sidebar {
+    width: 256px; /* サイドバーの幅を設定するのじゃ */
+    background-color: #f5f5f5; /* 背景色じゃ */
+    border-right: 1px solid #e0e0e0; /* 右側に境界線をつけるのじゃ */
+    height: 100%; /* 親要素の高さに合わせるのじゃ */
+    display: flex; /* 子要素を柔軟に配置するためじゃ */
+    flex-direction: column; /* 子要素を縦に並べるのじゃ */
+    flex-shrink: 0; /* 縮まないようにするのじゃ */
+}
+.sidebar-header {
+    padding: 20px; /* 内側の余白じゃ */
+    border-bottom: 1px solid #e0e0e0; /* 下側に境界線をつけるのじゃ */
+}
+.sidebar-home {
+    font-size: 1.25rem; /* 文字の大きさじゃ */
+    font-weight: 600; /* 文字の太さじゃ */
+    color: #4f7cac; /* 文字の色じゃ */
+    display: flex; /* アイコンとテキストを横に並べるためじゃ */
+    align-items: center; /* 縦方向の中央揃えじゃ */
+    gap: 8px; /* アイコンとテキストの間隔じゃ */
+    text-decoration: none; /* 下線を消すのじゃ */
+}
+/* Main Content Styles */
+/* メインコンテンツに関連するスタイルを書いてください */
+.main-content {
+    flex: 1; /* 残りのスペースを全て使うようにするのじゃ */
+}
+
+/* セクションヘッダー */
+.section-header {
+    background-color: #ffffff; /* 背景色じゃ */
+    padding: 32px; /* 内側の余白じゃ */
+    border-bottom: 1px solid #e0e0e0; /* 下側に境界線をつけるのじゃ */
+    text-align: center; /* 中央揃えじゃ */
+}
+.section-title {
+    font-size: 1.5rem; /* 文字の大きさじゃ */
+    font-weight: 600; /* 文字の太さじゃ */
+    color: #2f2f2f; /* 文字の色じゃ */
+    margin-bottom: 8px; /* 下側の外側の余白じゃ */
+}
+.section-subtitle {
+    font-size: 1.125rem; /* 文字の大きさじゃ */
+    color: #757575; /* 文字の色じゃ */
+    margin-bottom: 24px; /* 下側の外側の余白じゃ */
+}
+.section-description {
+    max-width: 672px; /* 最大幅じゃ */
+    margin: 0 auto; /* 左右中央揃えじゃ */
+    color: #757575; /* 文字の色じゃ */
+    padding: 32px; /* 内側の余白じゃ */
+}
+.section-description p {
+    margin-bottom: 16px; /* 段落の下側の外側の余白じゃ */
+}
+
+/* プロフィールサークル */
+.profile-circle {
+    width: 96px; /* 幅じゃ */
+    height: 96px; /* 高さじゃ */
+    background-color: #4f7cac; /* 背景色じゃ */
+    border-radius: 50%; /* 角を丸くして円にするのじゃ */
+    display: flex; /* 子要素を柔軟に配置するためじゃ */
+    align-items: center; /* 縦方向の中央揃えじゃ */
+    justify-content: center; /* 横方向の中央揃えじゃ */
+    margin: 0 auto 24px; /* 上下の外側の余白と左右中央揃えじゃ */
+}
+.profile-circle span {
+    font-size: 2.5rem; /* 文字の大きさじゃ */
+    color: #ffffff; /* 文字の色じゃ */
+}
+
+/* セクション本文 */
+.section-body {
+    padding: 32px; /* 内側の余白じゃ */
+}
